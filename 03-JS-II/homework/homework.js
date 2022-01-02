@@ -123,7 +123,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if(num1 < 0 || num2 < 0 || num3 < 0){
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   }
   else if(num1 === 0 || num2 === 0 || num3 === 0) {
@@ -172,11 +172,14 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí     
-  let arrayTablaDel6 = []
-  for (let i = 0; i < 11; i++) {
-        arrayTablaDel6.push(6 * i)
-  }
-  return arrayTablaDel6;
+  var tabla = []
+     for ( let i = 0 ; i < 11 ; i ++ )
+     {
+       tabla.push( 6 * i )
+      }
+    console.log(tabla)
+     return tabla
+  
 }
 
 function tieneTresDigitos(numero){
