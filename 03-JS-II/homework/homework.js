@@ -84,14 +84,22 @@ function esDiezOCinco(numero) {
     // Devuelve "true" si "numero" es 10 o 5
     // De lo contrario, devuelve "false"
     // Tu código:
-    return numero === 10 || numero === 5;
+    // return numero === 5 || numero === 10;
+    if(numero === 5 || numero === 10){
+      return true
+    }
+    return false
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20;
+  //return numero < 50 && numero > 20;
+  if(numero < 50 && numero > 20){
+    return true
+  }
+  return false
 }
 
 function esEntero(numero) {
@@ -102,7 +110,12 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0;
+   //return numero % 1 === 0;
+  if(Number.isInteger(numero)){
+    return true
+  }
+  return false
+
 }
 
 function fizzBuzz(numero) {
@@ -110,10 +123,19 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 15 === 0) return 'fizzbuzz';
-  if(numero % 3 === 0) return 'fizz';
-  if(numero % 5 === 0) return 'buzz';
+
+  if(numero % 3 === 0 && numero %5 === 0) {
+    return 'fizzbuzz';
+  }
+  if(numero % 3 === 0) {
+    return 'fizz';
+  }
+  else if(numero % 5 === 0) {
+    return 'buzz';
+  }
+  else {
   return numero;
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -150,12 +172,12 @@ function esPrimo(numero) {
   // Test
   if( numero < 2) return false;
   if(numero === 2) return true;
-  for(var i = 2; i < numero; i++) {
+  for(var i = 2; i < numero; i++){
     if(numero % i === 0) {
       return false;
     }
   }
-  return true;
+  return true
 }
 
 function esVerdadero(valor){
@@ -185,7 +207,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y determinar si tiene 3 dígitos.
   //Escribe tu código aquí
-  if(numero > 99 && numero < 1000){
+  if(numero > 99 && numero < 1000 ){
     return true;
   }
   return false;
