@@ -5,14 +5,31 @@ img{
     width: 400px;        
 }
 #thirdDiv{
+    margin: auto;
+    align-items: center;
     padding: 50px;
     background-color: aquamarine;
     height: 600px;
     width: 500px;
     border: 10px blue solid;
+    
    }
 #spanId{
     font-size: 18px;
     margin: 50px;
     background-color: brown;
 }
+body {
+    height: 800px;
+    background-image: url("https://envato-shoebox-0.imgix.net/efd7/3232-1605-4eb1-af1c-21f23ee3234b/IMG_7436-1.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=900&s=1c3821cd6c1945110452018f592becce");
+    background-size: cover;
+    text-align: center;
+}
+.divClass H3 {
+    color:red;
+    font-size: 20px;
+}
+.divClass{
+    color: beige;
+}
+
