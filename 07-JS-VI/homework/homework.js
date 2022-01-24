@@ -5,10 +5,11 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-  const primerCaracter = nombre.charAt(0).toUpperCase();
+  /*const primerCaracter = nombre.charAt(0).toUpperCase();
   const restoDeLaCadena = nombre.substring(1, nombre.length);
   return primerCaracter.concat(restoDeLaCadena);
-
+*/
+return nombre[0].toUpperCase() + nombre.slice(1)
 }
 
 function invocarCallback(cb) {
@@ -49,7 +50,7 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var array = [1,2,3,4,5]
+ /* var array = [1,2,3,4,5]
   function cb (e) {console.log(e)}
   nuevoarray = [];
   var nuevoArray = [];
@@ -58,6 +59,20 @@ function map(array, cb) {
   nuevoArray[i] = cb(array[i]);
   
 }
+}
+// otra forma 
+
+return array.map(function(e){//e es elemento
+  return cb(e)
+})
+otra forma 
+
+return array.map(e => cb(e))
+*/
+var newArray = array.map(function(e){
+  return cb(e)
+})
+return newArray
 }
 
 function filter(array) {
